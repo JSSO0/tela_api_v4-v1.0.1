@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom'
 
-import { Button, Img, Input, Text } from "components";
+import { Button, Img, Input, Text } from 'components'
 
 const BuscarusurioPage = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   return (
     <>
@@ -37,7 +37,7 @@ const BuscarusurioPage = () => {
           </div>
           <Button
             className="common-pointer cursor-pointer font-extrabold leading-[normal] min-w-[217px] mt-7 text-center text-xs"
-            onClick={() => navigate("/criaadeusurio")}
+            onClick={() => navigate('/criaadeusurio')}
           >
             Buscar usuário
           </Button>
@@ -53,7 +53,7 @@ const BuscarusurioPage = () => {
           <div className="flex flex-col items-center justify-start mt-[78px] w-[37%] md:w-full">
             <Button
               className="common-pointer cursor-pointer font-extrabold leading-[normal] min-w-[217px] text-center text-xs"
-              onClick={() => navigate("/criaadeusurio")}
+              onClick={() => navigate('/criaadeusurio')}
             >
               Voltar
             </Button>
@@ -61,7 +61,7 @@ const BuscarusurioPage = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default BuscarusurioPage;
+export default BuscarusurioPage

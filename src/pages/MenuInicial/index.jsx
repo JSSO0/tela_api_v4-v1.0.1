@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom'
 
-import { Button, Img, Text } from "components";
+import { Button, Img, Text } from 'components'
 
 const MenuInicialPage = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   return (
     <>
@@ -33,25 +33,25 @@ const MenuInicialPage = () => {
           <div className="gap-[29px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 items-center justify-between w-full">
             <Button
               className="common-pointer cursor-pointer flex-1 font-extrabold leading-[normal] min-w-[217px] text-center text-xs w-full"
-              onClick={() => navigate("/criaadeusurio")}
+              onClick={() => navigate('/criaadeusurio')}
             >
               Criar usuário
             </Button>
             <Button
               className="common-pointer cursor-pointer flex-1 font-extrabold leading-[normal] min-w-[217px] text-center text-xs w-full"
-              onClick={() => navigate("/ediodeusurio")}
+              onClick={() => navigate('/ediodeusurio')}
             >
               Editar usuário
             </Button>
             <Button
               className="common-pointer cursor-pointer flex-1 font-extrabold leading-[normal] min-w-[217px] text-center text-xs w-full"
-              onClick={() => navigate("/buscarusurios")}
+              onClick={() => navigate('/buscarusurios')}
             >
               Buscar usuários
             </Button>
             <Button
               className="common-pointer cursor-pointer flex-1 font-extrabold leading-[normal] min-w-[217px] text-center text-xs w-full"
-              onClick={() => navigate("/buscarusurio")}
+              onClick={() => navigate('/buscarusurio')}
             >
               Buscar usuário
             </Button>
@@ -59,7 +59,7 @@ const MenuInicialPage = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default MenuInicialPage;
+export default MenuInicialPage

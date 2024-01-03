@@ -1,42 +1,42 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { ErrorMessage } from "../../components/ErrorMessage";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { ErrorMessage } from '../../components/ErrorMessage'
 
-const variants = { fill: { gray_100: "bg-gray-100" } };
-const shapes = { round: "rounded-[10px]" };
+const variants = { fill: { gray_100: 'bg-gray-100' } }
+const shapes = { round: 'rounded-[10px]' }
 
 const Input = React.forwardRef(
   (
     {
-      wrapClassName = "",
-      className = "",
-      name = "",
-      placeholder = "",
-      type = "text",
+      wrapClassName = '',
+      className = '',
+      name = '',
+      placeholder = '',
+      type = 'text',
       children,
       errors = [],
-      label = "",
+      label = '',
       prefix,
       suffix,
       onChange,
-      shape = "round",
-      size = "",
-      variant = "fill",
-      color = "gray_100",
+      shape = 'round',
+      size = '',
+      variant = 'fill',
+      color = 'gray_100',
       ...restProps
     },
     ref,
   ) => {
     const handleChange = (e) => {
-      if (onChange) onChange(e?.target?.value);
-    };
+      if (onChange) onChange(e?.target?.value)
+    }
 
     return (
       <>
         <div
           className={`${wrapClassName} 
-              ${shapes[shape] || ""} 
-              ${variants[variant]?.[color] || ""} 
+              ${shapes[shape] || ''} 
+              ${variants[variant]?.[color] || ''} 
               `}
         >
           {!!label && label}
@@ -54,9 +54,9 @@ const Input = React.forwardRef(
         </div>
         {!!errors && <ErrorMessage errors={errors} />}
       </>
-    );
+    )
   },
-);
+)
 
 Input.propTypes = {
   wrapClassName: PropTypes.string,
@@ -64,10 +64,10 @@ Input.propTypes = {
   name: PropTypes.string,
   placeholder: PropTypes.string,
   type: PropTypes.string,
-  shape: PropTypes.oneOf(["round"]),
+  shape: PropTypes.oneOf(['round']),
 
-  variant: PropTypes.oneOf(["fill"]),
-  color: PropTypes.oneOf(["gray_100"]),
-};
+  variant: PropTypes.oneOf(['fill']),
+  color: PropTypes.oneOf(['gray_100']),
+}
 
-export { Input };
+export { Input }

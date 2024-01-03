@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
 const Img = ({
   className,
-  src = "defaultNoData.png",
-  alt = "testImg",
+  src = 'defaultNoData.png',
+  alt = 'testImg',
   ...restProps
 }) => {
   return (
@@ -12,8 +12,8 @@ const Img = ({
       src={src}
       alt={alt}
       {...restProps}
-      loading={"lazy"}
+      loading={'lazy'}
     />
-  );
-};
-export { Img };
+  )
+}
+export { Img }

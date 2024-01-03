@@ -1,12 +1,12 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "pages/Home";
-import NotFound from "pages/NotFound";
-const Buscarusurio = React.lazy(() => import("pages/Buscarusurio"));
-const Buscarusurios = React.lazy(() => import("pages/Buscarusurios"));
-const Ediodeusurio = React.lazy(() => import("pages/Ediodeusurio"));
-const Criaadeusurio = React.lazy(() => import("pages/Criaadeusurio"));
-const MenuInicial = React.lazy(() => import("pages/MenuInicial"));
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from 'pages/Home'
+import NotFound from 'pages/NotFound'
+const Buscarusurio = React.lazy(() => import('pages/Buscarusurio'))
+const Buscarusurios = React.lazy(() => import('pages/Buscarusurios'))
+const Ediodeusurio = React.lazy(() => import('pages/Ediodeusurio'))
+const Criaadeusurio = React.lazy(() => import('pages/Criaadeusurio'))
+const MenuInicial = React.lazy(() => import('pages/MenuInicial'))
 const ProjectRoutes = () => {
   return (
     <React.Suspense fallback={<>Loading...</>}>
@@ -22,6 +22,6 @@ const ProjectRoutes = () => {
         </Routes>
       </Router>
     </React.Suspense>
-  );
-};
-export default ProjectRoutes;
+  )
+}
+export default ProjectRoutes

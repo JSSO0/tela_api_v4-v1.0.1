@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom'
 
-import { Button, Img, Input, Text } from "components";
+import { Button, Img, Input, Text } from 'components'
 
 const EdiodeusurioPage = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   return (
     <>
@@ -25,14 +25,14 @@ const EdiodeusurioPage = () => {
           <div className="absolute bottom-[5%] flex flex-col gap-2 inset-x-[0] items-center justify-start mx-auto w-[19%]">
             <Button
               className="common-pointer cursor-pointer font-extrabold leading-[normal] min-w-[217px] text-center text-xs"
-              onClick={() => navigate("/criaadeusurio")}
+              onClick={() => navigate('/criaadeusurio')}
             >
               Editar usuário
             </Button>
             <div className="flex flex-col items-center justify-start w-full">
               <Button
                 className="common-pointer cursor-pointer font-extrabold leading-[normal] min-w-[217px] text-center text-xs"
-                onClick={() => navigate("/criaadeusurio")}
+                onClick={() => navigate('/criaadeusurio')}
               >
                 Voltar
               </Button>
@@ -127,7 +127,7 @@ const EdiodeusurioPage = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default EdiodeusurioPage;
+export default EdiodeusurioPage
