@@ -19,3 +19,6 @@ export const createUser = async (userData) => {
     throw error
   }
 }
+
+console.log('API URL:', API_URLS.POST_PESSOAS_API);
+
