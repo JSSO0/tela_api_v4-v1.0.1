@@ -1,5 +1,6 @@
-module.exports = {
-  parser: '@babel/eslint-parser',
+export const parser = '@babel/eslint-parser'
+
+export default {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
