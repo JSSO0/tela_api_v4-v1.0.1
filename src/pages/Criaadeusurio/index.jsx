@@ -10,24 +10,28 @@ const CriaadeusurioPage = () => {
     cpf: '',
     username: '',
     password: '',
-  })
+  });
 
-  const [result, setResult] = useState(null)
+  const [result, setResult] = useState(null);
 
   const handleInputChange = (fieldName, value) => {
     setUserData((prevUserData) => ({
       ...prevUserData,
       [fieldName]: value,
-    }))
-  }
+    }));
+  };
 
   const handleCreateUser = async () => {
     try {
+      console.log('User data before API call:', userData);
+
       // Chame a função do serviço passando os dados do usuário
-      const response = await createUser(userData)
+      const response = await createUser(userData);
+
+      console.log('API response:', response);
 
       // Atualize o estado com a resposta da chamada da API
-      setResult(response)
+      setResult(response);
 
       // Limpe o estado após o sucesso, se necessário
       setUserData({
@@ -37,21 +41,22 @@ const CriaadeusurioPage = () => {
         cpf: '',
         username: '',
         password: '',
-      })
+      });
 
       // Retorne a resposta da chamada da API
-      return response
+      return response;
     } catch (error) {
       // Trate erros, se necessário
-      console.error('Erro ao criar usuário:', error)
+      console.error('Erro ao criar usuário:', error);
 
       // Limpe o resultado em caso de erro
-      setResult(null)
+      setResult(null);
 
       // Retorne null ou lance o erro para ser tratado pelo chamador
-      return null
+      return null;
     }
-  }
+  };
+
 
   return (
     <>
